@@ -1,0 +1,2 @@
+class FridgeEvent < ApplicationRecord
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @fridge_event.temperature %>
+</p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @fridge_event.temperature %>
+</p>
+
+<p>
+  <strong>Door open:</strong>
+  <%= @fridge_event.door_open %>
+</p>
+
+<%= link_to 'Edit', edit_fridge_event_path(@fridge_event) %> |
+<%= link_to 'Back', fridge_events_path %>

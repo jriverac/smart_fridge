@@ -1,0 +1,32 @@
+<%= form_for(fridge_event) do |f| %>
+  <% if fridge_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fridge_event.errors.count, "error") %> prohibited this fridge_event from being saved:</h2>
+
+      <ul>
+      <% fridge_event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :temperature %>
+    <%= f.text_field :temperature %>
+  </div>
+
+  <div class="field">
+    <%= f.label :temperature %>
+    <%= f.text_field :temperature %>
+  </div>
+
+  <div class="field">
+    <%= f.label :door_open %>
+    <%= f.check_box :door_open %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

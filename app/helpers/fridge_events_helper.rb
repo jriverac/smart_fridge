@@ -1,0 +1,2 @@
+module FridgeEventsHelper
+end
